@@ -4,8 +4,8 @@ services:
     image: postgres:15
     environment:
       POSTGRES_DB: notifications
-      POSTGRES_USER: karthikeyagvsr
-      POSTGRES_PASSWORD: Venkat@1967g
+      POSTGRES_USER: poojasrinivasan
+      POSTGRES_PASSWORD: password
     ports:
       - "5434:5432"
     volumes:
@@ -19,8 +19,8 @@ services:
       - "8080:8080"
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/notifications
-      SPRING_DATASOURCE_USERNAME: karthikeyagvsr
-      SPRING_DATASOURCE_PASSWORD: Venkat@1967g
+      SPRING_DATASOURCE_USERNAME: poojasrinivasan
+      SPRING_DATASOURCE_PASSWORD: password
       SPRING_MAIL_HOST: smtp.gmail.com
       SPRING_MAIL_PORT: 587
       SPRING_MAIL_USERNAME: psrinivasan1801@gmail.com
